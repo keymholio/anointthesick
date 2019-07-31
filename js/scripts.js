@@ -1,8 +1,3 @@
-// Fade out logo on scroll
-$(window).scroll(function() {
-  $(".logo-hero").css("opacity", 1 - $(window).scrollTop() / 150);
-});
-
 $(function() {
   var previousScroll = 0;
   var d = 0;
@@ -23,11 +18,17 @@ $(function() {
     s = d;
 
     // top nav scroll down
-    console.log(currentScroll);
     if (currentScroll > 20) {
       $("nav").css("top", 0);
     } else {
       $("nav").css("top", "-100px");
     }
+
+    // fade out logo in hero on scroll
+    $(".logo-hero").css("opacity", 1 - $(window).scrollTop() / 150);
+  });
+
+  $(".bio-link").click(function() {
+    $("body").scrollTo("#bio", 800);
   });
 });

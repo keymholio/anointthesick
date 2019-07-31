@@ -53,6 +53,11 @@ nav a {
   font-weight: 300;
   margin-left: 1em;
   text-decoration: none;
+  padding: 1.5em 0;
+}
+
+nav a:hover {
+  color: #fff;
 }
 
 nav .logo {
@@ -82,7 +87,7 @@ nav .logo {
 }
 
 .bio .content {
-  padding: 8em 4em;
+  padding: 10em 4em;
   width: 50%;
 }
 
