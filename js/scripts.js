@@ -2,20 +2,23 @@ $(function() {
   var previousScroll = 0;
   var d = 0;
   var s = 0;
+  var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
 
   $(window).scroll(function() {
     var currentScroll = $(this).scrollTop();
 
     // parallax script
-    if (currentScroll > previousScroll) {
-      d = s - 0.5;
-      $(".parallax").css("background-position-y", d);
-    } else {
-      d = s + 0.5;
-      $(".parallax").css("background-position-y", d);
+    if (!isMobile) {
+      if (currentScroll > previousScroll) {
+        d = s - 0.5;
+        $(".parallax").css("background-position-y", d);
+      } else {
+        d = s + 0.5;
+        $(".parallax").css("background-position-y", d);
+      }
+      previousScroll = currentScroll;
+      s = d;
     }
-    previousScroll = currentScroll;
-    s = d;
 
     // top nav scroll down
     if (currentScroll > 50) {
