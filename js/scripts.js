@@ -18,7 +18,7 @@ $(function() {
     s = d;
 
     // top nav scroll down
-    if (currentScroll > 20) {
+    if (currentScroll > 50) {
       $("nav").css("top", 0);
     } else {
       $("nav").css("top", "-100px");
