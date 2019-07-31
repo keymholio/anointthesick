@@ -69,7 +69,7 @@ nav .logo {
   background-image: url(../images/ats-silhouette.jpg);
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto, auto, 100% auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
