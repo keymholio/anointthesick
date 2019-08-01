@@ -22,6 +22,7 @@ p {
 ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 /** SECTIONS **/
@@ -115,16 +116,16 @@ footer {
   justify-content: flex-end;
 }
 
-footer .social-media {
+footer ul {
   display: flex;
   margin-right: 1em;
 }
 
-footer .social-media li {
+footer li {
   margin: 0 0.25em;
 }
 
-footer .social-media svg {
+footer svg {
   width: 32px;
   fill: #555;
 }
@@ -149,8 +150,17 @@ footer .social-media a:hover svg {
     justify-content: center;
   }
 
+  footer ul {
+    margin-right: 0;
+  }
+
+  footer li {
+    margin: 0 0.25em;
+  }
+
   footer svg {
     height: 64px;
+    width: 40px;
   }
 }
 
