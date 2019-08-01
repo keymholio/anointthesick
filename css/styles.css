@@ -75,7 +75,7 @@ nav .logo {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -102,7 +102,9 @@ nav .logo {
 .skelly {
   background: url(../images/skeleton-jack.png) no-repeat center top fixed;
   background-size: cover;
-  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   width: 100vw;
   height: 20em;
 }
@@ -134,11 +136,24 @@ footer .social-media a:hover svg {
   fill: #ead69a;
 }
 
+/* mobile styles */
 @media screen and (max-width: 600px) {
   .logo-hero {
     height: 14em;
     margin-top: 0;
     margin-bottom: 4em;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  nav .logo {
+    margin: 0;
+  }
+
+  nav ul {
+    display: none;
   }
 
   .bio .content {
@@ -162,11 +177,9 @@ footer .social-media a:hover svg {
     height: 72px;
     width: 40px;
   }
-}
 
-@media screen and (min-width: 600px) {
   .hero,
   .skelly {
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 }
