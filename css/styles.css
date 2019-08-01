@@ -112,7 +112,7 @@ footer {
   background-color: #222;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 footer .social-media {
@@ -143,6 +143,14 @@ footer .social-media a:hover svg {
   .bio .content {
     padding: 4em 2em;
     width: 100vw;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer svg {
+    height: 64px;
   }
 }
 
