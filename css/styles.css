@@ -14,6 +14,15 @@ h1 {
   color: #ead69a;
 }
 
+h2 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: "Rufina";
+  margin: 0;
+  color: #ead69a;
+}
+
 p {
   font-weight: 400;
   line-height: 1.5;
@@ -23,6 +32,15 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+a,
+a:visited {
+  color: #ead69a;
+}
+
+a:hover {
+  color: #fff;
 }
 
 /** SECTIONS **/
@@ -88,19 +106,44 @@ nav .logo {
   height: 16em;
 }
 
-.bio {
+.bio,
+.releases,
+.contact {
   background-color: #111;
   display: flex;
   justify-content: center;
 }
 
-.bio .content {
+.release {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.release img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-right: 1em;
+}
+
+.content {
   padding: 10em 4em;
   width: 60%;
 }
 
 .skelly {
   background: url(../images/skeleton-jack.png) no-repeat center top fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100vw;
+  height: 20em;
+}
+
+.horse-knight {
+  background: url(../images/horse-knight.png) no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -179,7 +222,8 @@ footer .social-media a:hover svg {
   }
 
   .hero,
-  .skelly {
+  .skelly,
+  .horse-knight {
     background-attachment: scroll;
   }
 }

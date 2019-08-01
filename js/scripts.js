@@ -2,7 +2,8 @@ $(function() {
   var previousScroll = 0;
   var d = 0;
   var s = 0;
-  var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+  var isMobile = window.matchMedia("only screen and (max-width: 760px)")
+    .matches;
 
   $(window).scroll(function() {
     var currentScroll = $(this).scrollTop();
@@ -33,5 +34,13 @@ $(function() {
 
   $(".bio-link").click(function() {
     $("body").scrollTo("#bio", 800);
+  });
+
+  $(".releases-link").click(function() {
+    $("body").scrollTo("#releases", 800);
+  });
+
+  $(".contact-link").click(function() {
+    $("body").scrollTo(".contact", 800);
   });
 });
