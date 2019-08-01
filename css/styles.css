@@ -132,15 +132,6 @@ nav .logo {
   width: 60%;
 }
 
-.bg-image {
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  width: 100vw;
-  height: 30em;
-}
-
 .skelly {
   background: url(../images/skeleton-jack.jpg) no-repeat center top fixed;
 }
@@ -151,6 +142,15 @@ nav .logo {
 
 .ars-moriendi {
   background: url(../images/ars-moriendi.jpg) no-repeat center center fixed;
+}
+
+.bg-image {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100vw;
+  height: 30em;
 }
 
 footer {
@@ -231,5 +231,9 @@ footer .social-media a:hover svg {
   .horse-knight,
   .ars-moriendi {
     background-attachment: scroll;
+  }
+
+  .bg-image {
+    height: 12em;
   }
 }
