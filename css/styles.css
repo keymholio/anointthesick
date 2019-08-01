@@ -132,24 +132,25 @@ nav .logo {
   width: 60%;
 }
 
-.skelly {
-  background: url(../images/skeleton-jack.png) no-repeat center top fixed;
+.bg-image {
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   width: 100vw;
-  height: 20em;
+  height: 30em;
+}
+
+.skelly {
+  background: url(../images/skeleton-jack.jpg) no-repeat center top fixed;
 }
 
 .horse-knight {
-  background: url(../images/horse-knight.png) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  width: 100vw;
-  height: 20em;
+  background: url(../images/horse-knight.jpg) no-repeat center center fixed;
+}
+
+.ars-moriendi {
+  background: url(../images/ars-moriendi.jpg) no-repeat center center fixed;
 }
 
 footer {
@@ -227,7 +228,8 @@ footer .social-media a:hover svg {
 
   .hero,
   .skelly,
-  .horse-knight {
+  .horse-knight,
+  .ars-moriendi {
     background-attachment: scroll;
   }
 }
