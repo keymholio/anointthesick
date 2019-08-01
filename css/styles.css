@@ -1,7 +1,7 @@
 /*** GLOBAL STYLES **/
 body {
   margin: 0;
-  font-family: "Open Sans";
+  font-family: "PT Serif";
   color: #777;
   background-color: #000;
 }
@@ -9,6 +9,7 @@ body {
 h1 {
   font-size: 2em;
   font-weight: 700;
+  font-family: "Rufina";
   margin: 0;
   color: #ead69a;
 }
@@ -94,13 +95,13 @@ nav .logo {
 
 .bio .content {
   padding: 10em 4em;
-  width: 50%;
+  width: 60%;
 }
 
-.trees {
-  background: url(../images/art-dark-forest-795693.jpg) no-repeat center top
-    fixed;
+.skelly {
+  background: url(../images/skeleton-jack.png) no-repeat center top fixed;
   background-size: cover;
+  background-attachment: scroll;
   width: 100vw;
   height: 20em;
 }
@@ -146,7 +147,8 @@ footer .social-media a:hover svg {
 }
 
 @media screen and (min-width: 600px) {
-  .hero{
+  .hero,
+  .skelly {
     background-attachment: fixed;
   }
 }
