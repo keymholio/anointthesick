@@ -204,6 +204,10 @@ footer .social-media a:hover svg {
     width: 100vw;
   }
 
+  .release img {
+    max-width: 200px;
+  }
+
   footer {
     justify-content: center;
   }
