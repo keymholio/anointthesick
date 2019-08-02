@@ -9,17 +9,17 @@ $(function() {
     var currentScroll = $(this).scrollTop();
 
     // parallax script
-    if (!isMobile) {
-      if (currentScroll > previousScroll) {
-        d = s - 0.5;
-        $(".parallax").css("background-position-y", d);
-      } else {
-        d = 0;
-        $(".parallax").css("background-position-y", d);
-      }
-      previousScroll = currentScroll;
-      s = d;
+    //if (!isMobile) {
+    if (currentScroll > previousScroll) {
+      d = s - 0.5;
+      $(".parallax").css("background-position-y", d);
+    } else {
+      d = 0;
+      $(".parallax").css("background-position-y", d);
     }
+    previousScroll = currentScroll;
+    s = d;
+    //}
 
     // top nav scroll down
     if (currentScroll > 50) {
