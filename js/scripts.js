@@ -14,7 +14,7 @@ $(function() {
         d = s - 0.5;
         $(".parallax").css("background-position-y", d);
       } else {
-        d = s + 0.5;
+        d = 0;
         $(".parallax").css("background-position-y", d);
       }
       previousScroll = currentScroll;
