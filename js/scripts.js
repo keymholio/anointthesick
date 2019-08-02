@@ -9,9 +9,10 @@ $(function() {
     var currentScroll = $(this).scrollTop();
 
     // parallax script
-    //if (!isMobile) {
+
     if (currentScroll > previousScroll) {
-      d = s - 0.5;
+      var amount = isMobile ? 0.1 : 0.5;
+      d = s - amount;
       $(".parallax").css("background-position-y", d);
     } else {
       d = 0;
@@ -19,7 +20,6 @@ $(function() {
     }
     previousScroll = currentScroll;
     s = d;
-    //}
 
     // top nav scroll down
     if (currentScroll > 50) {
