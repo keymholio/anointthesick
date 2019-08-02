@@ -182,10 +182,14 @@ footer .social-media a:hover svg {
 
 /* mobile styles */
 @media screen and (max-width: 600px) {
+  .hero {
+    height: 400px;
+  }
+
   .logo-hero {
-    height: 14em;
+    height: 12em;
     margin-top: 0;
-    margin-bottom: 4em;
+    margin-bottom: 0;
   }
 
   nav {
