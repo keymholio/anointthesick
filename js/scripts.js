@@ -11,11 +11,11 @@ $(function() {
     // parallax script
 
     if (currentScroll > previousScroll) {
-      var amount = isMobile ? 0.1 : 0.5;
+      var amount = isMobile ? 0.05 : 0.5;
       d = s - amount;
       $(".parallax").css("background-position-y", d);
     } else {
-      d = 0;
+      d = s + amount;
       $(".parallax").css("background-position-y", d);
     }
     previousScroll = currentScroll;
