@@ -7,11 +7,10 @@ $(function() {
 
   $(window).scroll(function() {
     var currentScroll = $(this).scrollTop();
+    var amount = isMobile ? 0.1 : 0.5;
 
     // parallax script
-
     if (currentScroll > previousScroll) {
-      var amount = isMobile ? 0.1 : 0.5;
       d = s - amount;
       $(".parallax").css("background-position-y", d);
     } else {
