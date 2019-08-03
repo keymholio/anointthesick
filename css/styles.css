@@ -1,7 +1,7 @@
 /*** GLOBAL STYLES **/
 body {
   margin: 0;
-  font-family: "Open Sans";
+  font-family: "PT Serif";
   color: #777;
   background-color: #000;
 }
@@ -9,6 +9,16 @@ body {
 h1 {
   font-size: 2em;
   font-weight: 700;
+  font-family: "Rufina";
+  margin: 0;
+  color: #ead69a;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: "Rufina";
   margin: 0;
   color: #ead69a;
 }
@@ -21,11 +31,21 @@ p {
 ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited {
+  color: #ead69a;
+}
+
+a:hover {
+  color: #fff;
 }
 
 /** SECTIONS **/
 .main {
-  margin-bottom: 55px;
+  /*margin-bottom: 55px;*/
 }
 
 nav {
@@ -66,10 +86,16 @@ nav .logo {
 }
 
 .hero {
-  background: url(../images/ats-silhouette.jpg) no-repeat center top fixed;
+  background-image: url(../images/ats-silhouette.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
   width: 100vw;
   height: 100vh;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,23 +106,51 @@ nav .logo {
   height: 16em;
 }
 
-.bio {
+.bio,
+.releases,
+.contact {
   background-color: #111;
   display: flex;
   justify-content: center;
 }
 
-.bio .content {
-  padding: 10em 4em;
-  width: 50%;
+.release {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
 }
 
-.trees {
-  background: url(../images/art-dark-forest-795693.jpg) no-repeat center top
-    fixed;
+.release img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-right: 1em;
+}
+
+.content {
+  padding: 10em 4em;
+  width: 60%;
+}
+
+.skelly {
+  background: url(../images/website_01.jpeg) no-repeat center top fixed;
+}
+
+.horse-knight {
+  background: url(../images/website_03.jpeg) no-repeat center center fixed;
+}
+
+.ars-moriendi {
+  background: url(../images/website_02a.jpeg) no-repeat center center fixed;
+}
+
+.bg-image {
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   width: 100vw;
-  height: 20em;
+  height: 30em;
 }
 
 footer {
@@ -105,19 +159,19 @@ footer {
   background-color: #222;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
-footer .social-media {
+footer ul {
   display: flex;
   margin-right: 1em;
 }
 
-footer .social-media li {
+footer li {
   margin: 0 0.25em;
 }
 
-footer .social-media svg {
+footer svg {
   width: 32px;
   fill: #555;
 }
@@ -126,15 +180,64 @@ footer .social-media a:hover svg {
   fill: #ead69a;
 }
 
+/* mobile styles */
 @media screen and (max-width: 600px) {
-  .logo-hero {
-    height: 10em;
-    margin-top: 0;
-    margin-bottom: 4em;
+  .hero {
+    height: 400px;
   }
 
-  .bio .content {
+  .logo-hero {
+    height: 12em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  nav .logo {
+    margin: 0;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .content {
     padding: 4em 2em;
     width: 100vw;
+  }
+
+  .release img {
+    max-width: 200px;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer ul {
+    margin-right: 0;
+  }
+
+  footer li {
+    margin: 0 0.25em;
+  }
+
+  footer svg {
+    height: 72px;
+    width: 40px;
+  }
+
+  .hero,
+  .skelly,
+  .horse-knight,
+  .ars-moriendi {
+    background-attachment: scroll;
+  }
+
+  .bg-image {
+    height: 12em;
   }
 }

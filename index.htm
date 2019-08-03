@@ -5,13 +5,105 @@
     <title>Anoint the Sick</title>
     <meta name="description" content="Anoint the sick" />
     <meta name="author" content="Anoint the sick" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif|Rufina&display=swap"
       rel="stylesheet"
-      type="text/css"
-      href="//fonts.googleapis.com/css?family=Open+Sans"
     />
     <link rel="stylesheet" href="css/styles.css?v=1.0" />
+
+    <!-- favicon and app icons -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="images/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="images/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="images/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="images/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="images/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="images/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-145082965-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-145082965-1");
+    </script>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -35,13 +127,10 @@
             <a href="#about" class="bio-link">About</a>
           </li>
           <li>
-            <a href="#releases">Releases</a>
+            <a href="#music" class="releases-link">Releases</a>
           </li>
           <li>
-            <a href="#photos">Photos</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" class="contact-link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -52,9 +141,9 @@
           alt="Anoint the sick hero logo"
         />
       </section>
-      <section class="bio">
+      <section class="bio" id="bio">
         <div class="content">
-          <h1 id="bio">About</h1>
+          <h1>About</h1>
           <p>
             Hailing from Long Island, New York, Anoint the Sick is a progressive
             hardcore band that favors a style that evokes the guitar histrionics
@@ -68,12 +157,40 @@
           </p>
         </div>
       </section>
-      <!-- Photo by Daniel Ap from Pexels -->
-      <section class="trees parallax"></section>
+      <section class="skelly bg-image parallax"></section>
+      <section class="releases" id="releases">
+        <div class="content">
+          <h1>Releases</h1>
+          <div class="release">
+            <img src="images/truth-ep.png" alt="Truth EP album cover" />
+            <div class="desc">
+              <h2>Truth EP</h2>
+              <p>Self released</p>
+              <p>July 2019</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ars-moriendi bg-image parallax"></section>
+      <section class="contact">
+        <div class="content">
+          <h1>Contact</h1>
+          <p>
+            General inquiries<br />
+            <a href="mailto:info@anointthesick.com">info@anointthesick.com</a>
+          </p>
+          <p>
+            Bookings<br />
+            <a href="mailto:bookings@anointthesick.com"
+              >bookings@anointthesick.com</a
+            >
+          </p>
+        </div>
+      </section>
+      <section class="horse-knight bg-image parallax"></section>
     </section>
     <footer>
-      <div class="music-player"></div>
-      <ul class="social-media">
+      <ul>
         <li>
           <a
             href="https://music.apple.com/us/artist/anoint-the-sick/1472955840"
