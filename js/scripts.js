@@ -7,7 +7,7 @@ $(function() {
 
   $(window).scroll(function() {
     var currentScroll = $(this).scrollTop();
-    var amount = isMobile ? 0.1 : 0.5;
+    var amount = isMobile ? 0.1 : 0.3;
 
     // parallax script
     if (currentScroll > previousScroll) {
