@@ -193,15 +193,19 @@ footer .social-media a:hover svg {
   }
 
   nav {
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   nav .logo {
-    margin: 0;
+    /* margin: 0; */
   }
 
-  nav ul {
+  nav ul li a {
     display: none;
+  }
+
+  nav ul li .shop-link {
+    display: block;
   }
 
   .content {
