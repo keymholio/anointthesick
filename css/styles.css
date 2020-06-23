@@ -192,14 +192,6 @@ footer .social-media a:hover svg {
     margin-bottom: 0;
   }
 
-  nav {
-    /* justify-content: center; */
-  }
-
-  nav .logo {
-    /* margin: 0; */
-  }
-
   nav ul li a {
     display: none;
   }
