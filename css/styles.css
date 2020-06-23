@@ -114,17 +114,29 @@ nav .logo {
   justify-content: center;
 }
 
-.release {
+.release_wrap {
   display: flex;
-  align-items: center;
+}
+
+.release {
+  display: inline-block;
   margin-top: 2em;
+  margin-right: 2em;
+}
+
+.release h2 {
+  font-weight: 500;
+}
+
+.release p {
+  margin-top: 0.5em;
 }
 
 .release img {
   width: 100%;
   max-width: 300px;
   height: auto;
-  margin-right: 1em;
+  margin-bottom: 1em;
 }
 
 .content {
@@ -205,8 +217,12 @@ footer .social-media a:hover svg {
     width: 100vw;
   }
 
+  .release h2 {
+    font-size: 1em;
+  }
+
   .release img {
-    max-width: 200px;
+    max-width: 150px;
   }
 
   footer {
